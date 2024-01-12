@@ -3,8 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
+<Layout title="Bienvenido a Astro.">
+	<main id="pri">
 		<svg
 			class="astro-a"
 			width="495"
@@ -34,7 +34,7 @@ import Card from '../components/Card.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<h1>Bienvenido a <span class="text-gradient">Astro</span></h1>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
@@ -72,7 +72,7 @@ import Card from '../components/Card.astro';
 	main {
 		margin: auto;
 		padding: 1rem;
-		width: 800px;
+		width: 1200px;
 		max-width: calc(100% - 2rem);
 		color: white;
 		font-size: 20px;
@@ -107,6 +107,7 @@ import Card from '../components/Card.astro';
 		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
 		padding: 1.5rem;
 		border-radius: 8px;
+	
 	}
 	.instructions code {
 		font-size: 0.8em;
@@ -121,7 +122,7 @@ import Card from '../components/Card.astro';
 	}
 	.link-card-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		grid-template-columns: repeat(3, minmax(24ch, 1fr));
 		gap: 2rem;
 		padding: 0;
 	}
