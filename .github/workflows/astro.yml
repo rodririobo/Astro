@@ -21,7 +21,7 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
       - name: Install pnpm
-        run:  npm install @pnpm/action-setup@latest
+        run:  npm install pnpm 
       - name: Install, build, and upload your site
         uses: withastro/action@v2
         with:
