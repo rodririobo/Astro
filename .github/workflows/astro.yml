@@ -24,10 +24,10 @@ jobs:
       #  run:  pnpm/action-setup@v2
       - name: Install, build, and upload your site
         uses: withastro/action@v2
-      #  with:
-       #   path: .
-        #  node-version: 20.11.1
-        #  package-manager: pnpm@8.15.1 # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
+        with:
+         path: .
+         node-version: 20.11.1
+         package-manager: pnpm@8.15.1 # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
 
   deploy:
     needs: build
