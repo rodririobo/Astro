@@ -25,7 +25,7 @@ jobs:
       - name: Details
         run:  pnpm --version
       - name: Details
-        run:  ls -la
+        run:  ls -la /home
       - name: Install, build, and upload your site
         uses: withastro/action@v2
         with:
