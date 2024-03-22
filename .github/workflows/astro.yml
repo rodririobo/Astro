@@ -24,6 +24,8 @@ jobs:
         run:  npm install -g pnpm
       - name: Details
         run:  pnpm --version
+      - name: Details
+        run:  ls -la
       - name: Install, build, and upload your site
         uses: withastro/action@v2
         with:
