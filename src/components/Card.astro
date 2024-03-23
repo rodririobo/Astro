@@ -15,11 +15,11 @@ const {alt, scr, height, width, caption, href} = Astro.props;
 
 	<li class="link-card">
 		<article> 
-			<picture >
+			<figure>
 				<a href={href}><img src={scr} alt={alt} height={height} width={width}></a>
-			</picture>
-			<h2>Prueba</h2>
+				<h2>Prueba</h2>
 			<figcaption>{caption}</figcaption>
+		    </figure>
 		</article>
 	</li>
 
@@ -70,5 +70,15 @@ const {alt, scr, height, width, caption, href} = Astro.props;
 	picture a {
 		text-decoration: none;
 		color:white;
+	}
+	article {
+		
+		display: flex;
+    	flex-wrap: wrap;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+    	align-content: center;
+	
 	}
 </style>
