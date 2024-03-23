@@ -18,7 +18,7 @@ const {alt, scr, height, width, caption, href} = Astro.props;
 			<figure>
 				<a href={href}><img src={scr} alt={alt} height={height} width={width}></a>
 				<h2>Prueba</h2>
-			<figcaption>{caption}</figcaption>
+				<figcaption>{caption}</figcaption>
 		    </figure>
 		</article>
 	</li>
@@ -67,11 +67,11 @@ const {alt, scr, height, width, caption, href} = Astro.props;
 	.link-card:is(:hover, :focus-within) h2 {
 		color: rgb(var(--accent-light));
 	}
-	picture a {
+	figure a {
 		text-decoration: none;
 		color:white;
 	}
-	article {
+	figure {
 		
 		display: flex;
     	flex-wrap: wrap;
