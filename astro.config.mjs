@@ -4,8 +4,8 @@ import { defineConfig } from 'astro/config';
 
 export default defineConfig({
 
-    site: 'https://rodririobo.github.io',
+    site: "https://rodririobo.github.io",
 
-    base: '/Astro',
+    base: "/Astro",
 
 })
