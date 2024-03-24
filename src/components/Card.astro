@@ -16,7 +16,7 @@ const {alt, scr, height, width, caption} = Astro.props;
  
 			<figure>
 				<h2>Prueba</h2>
-						<a href={href}><img src={scr} alt={alt} height={height} width={width}></a>
+				<img src={scr} alt={alt} height={height} width={width}>
 				<figcaption>{caption}</figcaption>
 		    </figure>
 	
@@ -66,10 +66,6 @@ const {alt, scr, height, width, caption} = Astro.props;
 	.link-card:is(:hover, :focus-within) h2 {
 		color: rgb(var(--accent-light));
 	}
-	figure a {
-		text-decoration: none;
-		color:white;
-	}
 	figure {
 		
 		padding: 0;
@@ -82,11 +78,4 @@ const {alt, scr, height, width, caption} = Astro.props;
     	align-content: center;
 	
 	}
-
-	figure a {
-	text-decoration: none;
-	color:white;
-	}
-
-
 </style>
