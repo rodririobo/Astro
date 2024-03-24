@@ -5,13 +5,12 @@ import { Image } from 'astro:assets';
 interface Props {
 
    imagePath: string;
-   alt: string;
+   altText: string;
    caption: string;
-   width?: number;
-   height?: number;   
+   
 }
 
-const { imagePath, alt ,caption, width, height} = Astro.props;
+const { imagePath, altText ,caption} = Astro.props;
 
 const images = import.meta.glob<{ default: ImageMetadata }>('../../src/assets/*.{jpeg,jpg,png,gif}');
 if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "../../src/assets/*.{jpeg,jpg,png,gif}"`);
@@ -21,8 +20,8 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
 <li class="link-card">
 
 <figure>
-        <h2>Prueba</h2>
-        <Image src={images[imagePath]()} alt={alt} height={height} width={width} />
+        
+        <Image src={images[imagePath]()} alt={altText} />
         <figcaption>{caption}</figcaption>
 </figure>
 
@@ -84,4 +83,10 @@ align-items: center;
 align-content: center;
 
 }
+img {
+        height: 100%;
+        width: 100%;
+
+}
+
 </style>
