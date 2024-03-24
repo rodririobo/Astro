@@ -6,11 +6,12 @@ import Nav from '../components/Nav.astro';
 
 ---
 
-<Layout title="About">
+
+<Layout title="Bienvenido a About">
 	<main id="pri">
 	
        <Nav />
-		
+	   
 		<svg
 			class="astro-a"
 			width="495"
@@ -40,40 +41,53 @@ import Nav from '../components/Nav.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>About<span class="text-gradient"> Astro</span></h1>
+		<h1>Bienvenido a <span class="text-gradient"> About</span></h1>
 
 		<ul role="list" class="link-card-grid">
 			
 			<Card
 
-			caption="Esto es una prueba muy loca"
-			imagePath="../assets/imagen.jpg"
-			altText="Imagen white"
-			
-			
+				caption="Esto es una prueba muy loca"
+				imagePath="../assets/imagen.jpg"
+				altText="Imagen patos"
 
 			/>
+			
 			<Card
 			
-			caption="Esto es una prueba muy loca"
-			imagePath="../assets/imagen.jpg"
-			altText="Imagen cool"
+				caption="Esto es una prueba muy loca"
+				imagePath="../assets/imagen.jpg"
+				altText="Imagen gallina"
+
 			
 			/>
 			<Card
 			
-			caption="Esto es una prueba muy loca"
-			imagePath="../assets/imagen.jpg"
-			altText="Imagen card"
-						
+				caption="Esto es una prueba muy loca"
+				imagePath="../assets/imagen.jpg"
+				altText="Imagen pez"
+
+
 			/>
+
 			<Card
 			
-			caption="Esto es una prueba muy loca"
-			imagePath="../assets/imagen.jpg"
-			altText="Imagen mala"
+				caption="Esto es una prueba muy loca"
+				imagePath="../assets/imagen.jpg"
+				altText="Imagen loco"
+
+
+		/>
+
+		<Card
 			
-			/>
+				caption="Esto es una prueba muy loca"
+				imagePath="../assets/imagen.jpg"
+				altText="Imagen pedo"
+
+
+	/>       
+
 		
 		</ul>
 	</main>
@@ -114,7 +128,7 @@ import Nav from '../components/Nav.astro';
 	}
 	.link-card-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(12ch, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(32ch, 1fr));
 		gap: 1rem;
 		padding: 0;
 	}
