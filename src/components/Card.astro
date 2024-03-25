@@ -22,7 +22,7 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
 
 <figure>
         <h2>{title}</h2>
-        <Picture src={images[imagePath]()} alt={altText} />
+        <Picture src={images[imagePath]()} alt={altText} loading="lazy" />
         <figcaption>{description}</figcaption>
 </figure>
 
